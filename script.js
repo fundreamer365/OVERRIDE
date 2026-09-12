@@ -11,12 +11,12 @@ const SOCIAL_LINKS = {
 const DOWNLOAD_URL = '#'; // ← ссылка на скачивание билда
 const HERO_IMAGE   = '';  // ← например: 'assets/hero-bg.jpg'
 const SCREENSHOTS  = [
-  'assets/screenshot-1.jpg',
-  'assets/screenshot-2.jpg',
-  'assets/screenshot-3.jpg',
-  'assets/screenshot-4.jpg',
-  'assets/screenshot-5.jpg',
-  'assets/screenshot-6.jpg'
+  'assets/screenshot-1.png',
+  'assets/screenshot-2.png',
+  'assets/screenshot-3.png',
+  'assets/screenshot-4.png',
+  'assets/screenshot-5.png',
+  'assets/screenshot-6.png'
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
