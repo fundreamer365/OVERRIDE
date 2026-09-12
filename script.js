@@ -5,11 +5,7 @@
 // -------- CONFIG: где менять ссылки и медиа --------
 // (Меняй прямо здесь, чтобы не лазить по HTML)
 const SOCIAL_LINKS = {
-  discord: 'https://discord.gg/your-invite',
-  twitter: 'https://x.com/your-handle',
-  youtube: 'https://youtube.com/@your-channel',
-  steam:   'https://store.steampowered.com/app/XXXXXXX',
-  itch:    'https://your-name.itch.io/override'
+  itch:    'https://fundreamer.itch.io/override'
 };
 
 const DOWNLOAD_URL = '#'; // ← ссылка на скачивание билда
