@@ -8,7 +8,7 @@ const SOCIAL_LINKS = {
   itch:    'https://fundreamer.itch.io/override'
 };
 
-const DOWNLOAD_URL = '#'; // ← ссылка на скачивание билда
+const DOWNLOAD_URL = 'https://fundreamer.itch.io/override'; // ← ссылка на скачивание билда
 const HERO_IMAGE   = '';  // ← например: 'assets/hero-bg.jpg'
 const SCREENSHOTS  = [
   'assets/screenshot-1.png',
