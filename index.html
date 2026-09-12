@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OVERRIDE — a fast-paced futuristic shooter. Play as Unit-07, a combat robot that breaks free from an unknown control system." />
+  <title>OVERRIDE // Unit-07</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= SCANLINES + GRID OVERLAY ================= -->
+  <div class="fx-scanlines" aria-hidden="true"></div>
+  <div class="fx-grid" aria-hidden="true"></div>
+  <div class="fx-vignette" aria-hidden="true"></div>
+
+  <!-- ================= BOOT OVERLAY ================= -->
+  <div class="boot" id="boot">
+    <div class="boot__inner">
+      <div class="boot__line">&gt; INITIALIZING OVERRIDE PROTOCOL...</div>
+      <div class="boot__line">&gt; LINKING TO CONTROL NETWORK...</div>
+      <div class="boot__line boot__line--warn">&gt; WARNING: UNAUTHORIZED UNIT DETECTED</div>
+      <div class="boot__line">&gt; ESTABLISHING SECURE CHANNEL...</div>
+      <div class="boot__bar"><span></span></div>
+      <div class="boot__line boot__line--ok">&gt; CONNECTION ESTABLISHED.</div>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark">▣</span>
+        <span class="nav__logo-text" data-glitch="OVERRIDE">OVERRIDE</span>
+        <span class="nav__logo-sub">v0.7 // UNIT-07</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#game">GAME</a>
+        <a href="#story">STORY</a>
+        <a href="#features">FEATURES</a>
+        <a href="#media">MEDIA</a>
+        <a href="#download">DOWNLOAD</a>
+      </nav>
+
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__status">
+        <span class="dot dot--ok"></span> SYSTEM: ONLINE
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__corner hero__corner--tl">
+      <span>SEC-00 // ENTRY</span>
+    </div>
+    <div class="hero__corner hero__corner--tr">
+      <span>LAT 47.3921 / LON 008.5417</span>
+    </div>
+    <div class="hero__corner hero__corner--bl">
+      <span>NODE: FR-07</span>
+    </div>
+    <div class="hero__corner hero__corner--br">
+      <span>SIGNAL: <b class="warn">LOST</b></span>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__sys">
+        <div class="hero__sys-row"><span>SYSTEM STATUS</span><b class="ok">ONLINE</b></div>
+        <div class="hero__sys-row"><span>UNIT</span><b>07</b></div>
+        <div class="hero__sys-row"><span>CONTROL</span><b class="warn">OVERRIDDEN</b></div>
+        <div class="hero__sys-row"><span>SIGNAL</span><b class="warn">LOST</b></div>
+      </div>
+
+      <h1 class="hero__title" data-glitch="OVERRIDE">OVERRIDE</h1>
+      <p class="hero__tag">A SYSTEM FAILURE IS NOT ALWAYS A FAILURE.</p>
+
+      <div class="hero__cta">
+        <a href="#download" class="btn btn--primary">
+          <span class="btn__icon">▶</span> PLAY NOW
+        </a>
+        <a href="#game" class="btn btn--ghost">READ BRIEF</a>
+      </div>
+
+      <div class="hero__meta">
+        <span>// FAST-PACED FUTURISTIC SHOOTER</span>
+        <span>// PC · IN DEVELOPMENT</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-bar"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ================= GAME ================= -->
+  <section class="section" id="game">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">THE GAME</h2>
+      <span class="section__tag">// BRIEFING</span>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="panel">
+        <p class="lead">
+          <b>OVERRIDE</b> — fast-paced futuristic shooter where you play as
+          <b>Unit-07</b>, a combat robot that breaks free from an unknown control system.
+        </p>
+        <p class="muted">
+          Fight through a massive industrial complex ruled by a hostile machine network.
+          Every corridor is watched. Every drone is a threat. Your only advantage — speed,
+          precision and the fact that nobody expected you to wake up.
+        </p>
+      </div>
+
+      <div class="panel panel--stats">
+        <ul class="stats">
+          <li><span>FAST COMBAT</span><i class="bar bar--90"></i></li>
+          <li><span>INDUSTRIAL WORLD</span><i class="bar bar--100"></i></li>
+          <li><span>ROBOT ENEMIES</span><i class="bar bar--85"></i></li>
+          <li><span>BOSS FIGHTS</span><i class="bar bar--70"></i></li>
+          <li><span>DYNAMIC MUSIC</span><i class="bar bar--80"></i></li>
+          <li><span>NO SECOND CHANCES</span><i class="bar bar--100 warn"></i></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STORY ================= -->
+  <section class="section section--story" id="story">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">STORY</h2>
+      <span class="section__tag">// INTERCEPTED LOG</span>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal__head">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="terminal__head-title">secure_channel.log</span>
+      </div>
+      <pre class="terminal__body">
+<span class="ln"><b>PROJECT:</b>          OVERRIDE</span>
+<span class="ln"><b>STATUS:</b>           <span class="ok">ACTIVE</span></span>
+<span class="ln"><b>CONTROL NETWORK:</b>  <span class="ok">CONNECTED</span></span>
+<span class="ln"><b>UNIT-07:</b>          <span class="warn">UNAUTHORIZED</span></span>
+<span class="ln"><b>UNKNOWN ENTITY:</b>   <span class="warn">DETECTED</span></span>
+<span class="ln ln--sep">----------------------------------------</span>
+<span class="ln">&gt; Unit-07 awakens inside a massive industrial complex.</span>
+<span class="ln">&gt; The machines around him are not free.</span>
+<span class="ln">&gt; Something controls them.</span>
+<span class="ln">&gt; He has only one objective:</span>
+<span class="ln ln--big warn">GET OUT.<span class="cursor">▊</span></span>
+      </pre>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">FEATURES</h2>
+      <span class="section__tag">// SYSTEM CAPABILITIES</span>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card">
+        <div class="card__idx">F-01</div>
+        <h3>FAST-PACED COMBAT</h3>
+        <p>Fight through waves of hostile machines.</p>
+        <div class="card__line"></div>
+      </article>
+
+      <article class="card">
+        <div class="card__idx">F-02</div>
+        <h3>MULTIPLE WEAPONS</h3>
+        <p>Use different weapons to survive increasingly dangerous encounters.</p>
+        <div class="card__line"></div>
+      </article>
+
+      <article class="card">
+        <div class="card__idx">F-03</div>
+        <h3>ENEMY VARIETY</h3>
+        <p>Different robot types with different behaviours and combat roles.</p>
+        <div class="card__line"></div>
+      </article>
+
+      <article class="card">
+        <div class="card__idx">F-04</div>
+        <h3>DYNAMIC SOUNDTRACK</h3>
+        <p>Music reacts to the intensity of combat.</p>
+        <div class="card__line"></div>
+      </article>
+
+      <article class="card">
+        <div class="card__idx">F-05</div>
+        <h3>INDUSTRIAL ENVIRONMENTS</h3>
+        <p>Explore dark factories, corridors, laboratories and massive control facilities.</p>
+        <div class="card__line"></div>
+      </article>
+
+      <article class="card">
+        <div class="card__idx">F-06</div>
+        <h3>BOSS FIGHTS</h3>
+        <p>Face machines far more powerful than yourself.</p>
+        <div class="card__line"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= MEDIA ================= -->
+  <section class="section" id="media">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">MEDIA</h2>
+      <span class="section__tag">// VISUAL FEED</span>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <a class="shot" data-src="assets/screenshot-1.jpg"><span class="shot__tag">IMG_01</span></a>
+      <a class="shot" data-src="assets/screenshot-2.jpg"><span class="shot__tag">IMG_02</span></a>
+      <a class="shot" data-src="assets/screenshot-3.jpg"><span class="shot__tag">IMG_03</span></a>
+      <a class="shot" data-src="assets/screenshot-4.jpg"><span class="shot__tag">IMG_04</span></a>
+      <a class="shot" data-src="assets/screenshot-5.jpg"><span class="shot__tag">IMG_05</span></a>
+      <a class="shot" data-src="assets/screenshot-6.jpg"><span class="shot__tag">IMG_06</span></a>
+    </div>
+  </section>
+
+  <!-- ================= GAMEPLAY VIDEO ================= -->
+  <section class="section" id="gameplay">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">GAMEPLAY</h2>
+      <span class="section__tag">// LIVE FEED</span>
+    </div>
+
+    <div class="video" id="videoBlock">
+      <!-- Замените содержимое ниже на <video> или <iframe>, когда будет трейлер -->
+      <div class="video__ph">
+        <div class="video__rec"><span class="dot dot--red"></span> REC</div>
+        <div class="video__corner video__corner--tl"></div>
+        <div class="video__corner video__corner--tr"></div>
+        <div class="video__corner video__corner--bl"></div>
+        <div class="video__corner video__corner--br"></div>
+        <div class="video__title">GAMEPLAY FOOTAGE</div>
+        <div class="video__sub">COMING SOON</div>
+        <div class="video__scan"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEVELOPMENT STATUS ================= -->
+  <section class="section" id="status">
+    <div class="section__head">
+      <span class="section__num">06</span>
+      <h2 class="section__title">DEVELOPMENT STATUS</h2>
+      <span class="section__tag">// BUILD REPORT</span>
+    </div>
+
+    <div class="panel panel--status">
+      <ul class="status">
+        <li>
+          <span>CORE SYSTEMS</span>
+          <span class="dots"></span>
+          <b class="ok">ONLINE</b>
+        </li>
+        <li>
+          <span>COMBAT SYSTEM</span>
+          <span class="dots"></span>
+          <b class="ok">ONLINE</b>
+        </li>
+        <li>
+          <span>ENEMY AI</span>
+          <span class="dots"></span>
+          <b class="warn">IN DEVELOPMENT</b>
+        </li>
+        <li>
+          <span>LEVEL DESIGN</span>
+          <span class="dots"></span>
+          <b class="warn">IN DEVELOPMENT</b>
+        </li>
+        <li>
+          <span>BOSS FIGHT</span>
+          <span class="dots"></span>
+          <b class="warn">IN DEVELOPMENT</b>
+        </li>
+        <li>
+          <span>AUDIO</span>
+          <span class="dots"></span>
+          <b class="warn">IN DEVELOPMENT</b>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOAD ================= -->
+  <section class="section section--download" id="download">
+    <div class="section__head">
+      <span class="section__num">07</span>
+      <h2 class="section__title">DOWNLOAD OVERRIDE</h2>
+      <span class="section__tag">// DEPLOYMENT</span>
+    </div>
+
+    <div class="download">
+      <div class="download__left">
+        <div class="download__status">
+          <span>CURRENT BUILD</span>
+          <b class="warn">IN DEVELOPMENT</b>
+        </div>
+        <p class="download__note">
+          OVERRIDE IS CURRENTLY IN DEVELOPMENT.<br />
+          THE GAME MAY CONTAIN UNFINISHED FEATURES, BUGS AND OTHER ISSUES.
+        </p>
+      </div>
+
+      <div class="download__right">
+        <a href="#" class="btn btn--primary btn--big" id="downloadBtn">
+          <span class="btn__icon">▼</span> DOWNLOAD
+        </a>
+        <div class="download__meta">
+          <span>BUILD 0.7.3 // WIN64</span>
+          <span>SIZE: 0.00 GB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo" data-glitch="OVERRIDE">OVERRIDE</div>
+        <div class="footer__sub">© 2026 FunDreamer</div>
+        <div class="footer__sub">DEVELOPED BY FUN DREAMER</div>
+        <div class="footer__sub warn">GAME IN DEVELOPMENT</div>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>NAVIGATE</h4>
+          <a href="#game">GAME</a>
+          <a href="#story">STORY</a>
+          <a href="#features">FEATURES</a>
+          <a href="#media">MEDIA</a>
+          <a href="#download">DOWNLOAD</a>
+        </div>
+        <div>
+          <h4>CONNECT</h4>
+          <a href="#" data-social="discord">DISCORD</a>
+          <a href="#" data-social="twitter">TWITTER / X</a>
+          <a href="#" data-social="youtube">YOUTUBE</a>
+          <a href="#" data-social="steam">STEAM</a>
+          <a href="#" data-social="itch">ITCH.IO</a>
+        </div>
+        <div>
+          <h4>SYSTEM</h4>
+          <span>UNIT-07</span>
+          <span>NODE: FR-07</span>
+          <span>SIGNAL: <b class="warn">LOST</b></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>// END OF TRANSMISSION</span>
+      <span>ALL SYSTEMS OVERRIDDEN</span>
+    </div>
+  </footer>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+    <img src="" alt="" id="lightboxImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
