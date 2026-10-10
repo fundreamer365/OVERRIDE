@@ -12,12 +12,12 @@
 </head>
 <body>
 
-  <!-- ================= SCANLINES + GRID OVERLAY ================= -->
+  <!-- ================= FX OVERLAYS ================= -->
   <div class="fx-scanlines" aria-hidden="true"></div>
   <div class="fx-grid" aria-hidden="true"></div>
   <div class="fx-vignette" aria-hidden="true"></div>
 
-  <!-- ================= BOOT OVERLAY ================= -->
+  <!-- ================= BOOT ================= -->
   <div class="boot" id="boot">
     <div class="boot__inner">
       <div class="boot__line">&gt; INITIALIZING OVERRIDE PROTOCOL...</div>
@@ -43,6 +43,8 @@
         <a href="#story">STORY</a>
         <a href="#features">FEATURES</a>
         <a href="#media">MEDIA</a>
+        <a href="#screenshots">SCREENSHOTS</a>
+        <a href="#gameplay">GAMEPLAY</a>
         <a href="#download">DOWNLOAD</a>
       </nav>
 
@@ -61,18 +63,10 @@
     <div class="hero__bg" id="heroBg"></div>
     <div class="hero__overlay"></div>
 
-    <div class="hero__corner hero__corner--tl">
-      <span>SEC-00 // ENTRY</span>
-    </div>
-    <div class="hero__corner hero__corner--tr">
-      <span>LAT 47.3921 / LON 008.5417</span>
-    </div>
-    <div class="hero__corner hero__corner--bl">
-      <span>NODE: FR-07</span>
-    </div>
-    <div class="hero__corner hero__corner--br">
-      <span>SIGNAL: <b class="warn">LOST</b></span>
-    </div>
+    <div class="hero__corner hero__corner--tl"><span>SEC-00 // ENTRY</span></div>
+    <div class="hero__corner hero__corner--tr"><span>LAT 47.3921 / LON 008.5417</span></div>
+    <div class="hero__corner hero__corner--bl"><span>NODE: FR-07</span></div>
+    <div class="hero__corner hero__corner--br"><span>SIGNAL: <b class="warn">LOST</b></span></div>
 
     <div class="hero__content">
       <div class="hero__sys">
@@ -104,7 +98,7 @@
     </div>
   </section>
 
-  <!-- ================= GAME ================= -->
+  <!-- ================= 01 GAME ================= -->
   <section class="section" id="game">
     <div class="section__head">
       <span class="section__num">01</span>
@@ -138,7 +132,7 @@
     </div>
   </section>
 
-  <!-- ================= STORY ================= -->
+  <!-- ================= 02 STORY ================= -->
   <section class="section section--story" id="story">
     <div class="section__head">
       <span class="section__num">02</span>
@@ -169,7 +163,7 @@
     </div>
   </section>
 
-  <!-- ================= FEATURES ================= -->
+  <!-- ================= 03 FEATURES ================= -->
   <section class="section" id="features">
     <div class="section__head">
       <span class="section__num">03</span>
@@ -184,35 +178,30 @@
         <p>Fight through waves of hostile machines.</p>
         <div class="card__line"></div>
       </article>
-
       <article class="card">
         <div class="card__idx">F-02</div>
         <h3>MULTIPLE WEAPONS</h3>
         <p>Use different weapons to survive increasingly dangerous encounters.</p>
         <div class="card__line"></div>
       </article>
-
       <article class="card">
         <div class="card__idx">F-03</div>
         <h3>ENEMY VARIETY</h3>
         <p>Different robot types with different behaviours and combat roles.</p>
         <div class="card__line"></div>
       </article>
-
       <article class="card">
         <div class="card__idx">F-04</div>
         <h3>DYNAMIC SOUNDTRACK</h3>
         <p>Music reacts to the intensity of combat.</p>
         <div class="card__line"></div>
       </article>
-
       <article class="card">
         <div class="card__idx">F-05</div>
         <h3>INDUSTRIAL ENVIRONMENTS</h3>
         <p>Explore dark factories, corridors, laboratories and massive control facilities.</p>
         <div class="card__line"></div>
       </article>
-
       <article class="card">
         <div class="card__idx">F-06</div>
         <h3>BOSS FIGHTS</h3>
@@ -222,7 +211,7 @@
     </div>
   </section>
 
-  <!-- ================= MEDIA ================= -->
+  <!-- ================= 04 MEDIA (visual feed) ================= -->
   <section class="section" id="media">
     <div class="section__head">
       <span class="section__num">04</span>
@@ -230,87 +219,128 @@
       <span class="section__tag">// VISUAL FEED</span>
     </div>
 
-    <div class="gallery" id="gallery">
-      <a class="shot" data-src="assets/screenshot-1.jpg"><span class="shot__tag">IMG_01</span></a>
-      <a class="shot" data-src="assets/screenshot-2.jpg"><span class="shot__tag">IMG_02</span></a>
-      <a class="shot" data-src="assets/screenshot-3.jpg"><span class="shot__tag">IMG_03</span></a>
-      <a class="shot" data-src="assets/screenshot-4.jpg"><span class="shot__tag">IMG_04</span></a>
-      <a class="shot" data-src="assets/screenshot-5.jpg"><span class="shot__tag">IMG_05</span></a>
-      <a class="shot" data-src="assets/screenshot-6.jpg"><span class="shot__tag">IMG_06</span></a>
+    <!-- Компактный тизер-ряд. Оставлен, чтобы не ломать секцию MEDIA. -->
+    <div class="media-strip">
+      <a class="media-strip__item" href="#screenshots">
+        <span class="media-strip__num">IMG.A</span>
+        <span class="media-strip__label">SCREENSHOTS ARCHIVE</span>
+      </a>
+      <a class="media-strip__item" href="#gameplay">
+        <span class="media-strip__num">VID.01</span>
+        <span class="media-strip__label">PLAYTEST TRAILER</span>
+      </a>
+      <a class="media-strip__item" href="#gameplay">
+        <span class="media-strip__num">AUD.00</span>
+        <span class="media-strip__label">OST — COMING SOON</span>
+      </a>
     </div>
   </section>
 
-  <!-- ================= GAMEPLAY VIDEO ================= -->
-  <section class="section" id="gameplay">
+  <!-- ================= 05 SCREENSHOTS (NEW) ================= -->
+  <section class="section" id="screenshots">
     <div class="section__head">
       <span class="section__num">05</span>
-      <h2 class="section__title">GAMEPLAY</h2>
-      <span class="section__tag">// LIVE FEED</span>
+      <h2 class="section__title">SCREENSHOTS</h2>
+      <span class="section__tag">// VISUAL ARCHIVE</span>
     </div>
 
-    <div class="video" id="videoBlock">
-      <!-- Замените содержимое ниже на <video> или <iframe>, когда будет трейлер -->
-      <div class="video__ph">
-        <div class="video__rec"><span class="dot dot--red"></span> REC</div>
-        <div class="video__corner video__corner--tl"></div>
-        <div class="video__corner video__corner--tr"></div>
-        <div class="video__corner video__corner--bl"></div>
-        <div class="video__corner video__corner--br"></div>
-        <div class="video__title">GAMEPLAY FOOTAGE</div>
-        <div class="video__sub">COMING SOON</div>
-        <div class="video__scan"></div>
+    <div class="shots" id="shotsGrid">
+      <figure class="shot" data-full="assets/screenshots/01.jpg" data-caption="UNIT-07 — SECTOR A">
+        <img src="assets/screenshots/01.jpg" alt="OVERRIDE screenshot 01" loading="lazy" />
+        <figcaption class="shot__cap"><span class="shot__idx">IMG_01</span><span class="shot__ttl">SECTOR A</span></figcaption>
+      </figure>
+      <figure class="shot" data-full="assets/screenshots/02.jpg" data-caption="CONTROL NODE — INTERIOR">
+        <img src="assets/screenshots/02.jpg" alt="OVERRIDE screenshot 02" loading="lazy" />
+        <figcaption class="shot__cap"><span class="shot__idx">IMG_02</span><span class="shot__ttl">CONTROL NODE</span></figcaption>
+      </figure>
+      <figure class="shot" data-full="assets/screenshots/03.jpg" data-caption="HOSTILE UNIT — ENGAGED">
+        <img src="assets/screenshots/03.jpg" alt="OVERRIDE screenshot 03" loading="lazy" />
+        <figcaption class="shot__cap"><span class="shot__idx">IMG_03</span><span class="shot__ttl">HOSTILE CONTACT</span></figcaption>
+      </figure>
+      <figure class="shot" data-full="assets/screenshots/04.jpg" data-caption="FOUNDRY — LEVEL 03">
+        <img src="assets/screenshots/04.jpg" alt="OVERRIDE screenshot 04" loading="lazy" />
+        <figcaption class="shot__cap"><span class="shot__idx">IMG_04</span><span class="shot__ttl">FOUNDRY</span></figcaption>
+      </figure>
+      <figure class="shot" data-full="assets/screenshots/05.jpg" data-caption="SENTINEL — BOSS ENCOUNTER">
+        <img src="assets/screenshots/05.jpg" alt="OVERRIDE screenshot 05" loading="lazy" />
+        <figcaption class="shot__cap"><span class="shot__idx">IMG_05</span><span class="shot__ttl">SENTINEL</span></figcaption>
+      </figure>
+      <figure class="shot" data-full="assets/screenshots/06.jpg" data-caption="CORRIDOR 07 — LOW SIGNAL">
+        <img src="assets/screenshots/06.jpg" alt="OVERRIDE screenshot 06" loading="lazy" />
+        <figcaption class="shot__cap"><span class="shot__idx">IMG_06</span><span class="shot__ttl">CORRIDOR 07</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= 06 GAMEPLAY (YouTube trailer) ================= -->
+  <section class="section" id="gameplay">
+    <div class="section__head">
+      <span class="section__num">06</span>
+      <h2 class="section__title">GAMEPLAY TRAILER</h2>
+      <span class="section__tag">// PLAYTEST BUILD</span>
+    </div>
+
+    <div class="trailer">
+      <div class="trailer__frame">
+        <div class="trailer__corner trailer__corner--tl"></div>
+        <div class="trailer__corner trailer__corner--tr"></div>
+        <div class="trailer__corner trailer__corner--bl"></div>
+        <div class="trailer__corner trailer__corner--br"></div>
+
+        <div class="trailer__video">
+          <iframe
+            src="https://www.youtube.com/embed/jWAvEbqk9U0?rel=0&modestbranding=1&playsinline=1"
+            title="OVERRIDE — Playtest Trailer"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="trailer__meta">
+        <div class="trailer__meta-left">
+          <span class="trailer__rec"><span class="dot dot--red"></span> PLAYTEST · BUILD 0.7.x</span>
+          <p class="trailer__note">
+            Test footage — demonstrates current gameplay mechanics. Visuals, audio and
+            balancing are subject to change before release.
+          </p>
+        </div>
+        <a class="btn btn--ghost trailer__yt"
+           href="https://www.youtube.com/watch?v=jWAvEbqk9U0"
+           target="_blank" rel="noopener noreferrer">
+          WATCH ON YOUTUBE ↗
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= DEVELOPMENT STATUS ================= -->
+  <!-- ================= 07 DEVELOPMENT STATUS ================= -->
   <section class="section" id="status">
     <div class="section__head">
-      <span class="section__num">06</span>
+      <span class="section__num">07</span>
       <h2 class="section__title">DEVELOPMENT STATUS</h2>
       <span class="section__tag">// BUILD REPORT</span>
     </div>
 
     <div class="panel panel--status">
       <ul class="status">
-        <li>
-          <span>CORE SYSTEMS</span>
-          <span class="dots"></span>
-          <b class="ok">ONLINE</b>
-        </li>
-        <li>
-          <span>COMBAT SYSTEM</span>
-          <span class="dots"></span>
-          <b class="ok">ONLINE</b>
-        </li>
-        <li>
-          <span>ENEMY AI</span>
-          <span class="dots"></span>
-          <b class="warn">IN DEVELOPMENT</b>
-        </li>
-        <li>
-          <span>LEVEL DESIGN</span>
-          <span class="dots"></span>
-          <b class="warn">IN DEVELOPMENT</b>
-        </li>
-        <li>
-          <span>BOSS FIGHT</span>
-          <span class="dots"></span>
-          <b class="warn">IN DEVELOPMENT</b>
-        </li>
-        <li>
-          <span>AUDIO</span>
-          <span class="dots"></span>
-          <b class="warn">IN DEVELOPMENT</b>
-        </li>
+        <li><span>CORE SYSTEMS</span><span class="dots"></span><b class="ok">ONLINE</b></li>
+        <li><span>COMBAT SYSTEM</span><span class="dots"></span><b class="ok">ONLINE</b></li>
+        <li><span>ENEMY AI</span><span class="dots"></span><b class="warn">IN DEVELOPMENT</b></li>
+        <li><span>LEVEL DESIGN</span><span class="dots"></span><b class="warn">IN DEVELOPMENT</b></li>
+        <li><span>BOSS FIGHT</span><span class="dots"></span><b class="warn">IN DEVELOPMENT</b></li>
+        <li><span>AUDIO</span><span class="dots"></span><b class="warn">IN DEVELOPMENT</b></li>
       </ul>
     </div>
   </section>
 
-  <!-- ================= DOWNLOAD ================= -->
+  <!-- ================= 08 DOWNLOAD ================= -->
   <section class="section section--download" id="download">
     <div class="section__head">
-      <span class="section__num">07</span>
+      <span class="section__num">08</span>
       <h2 class="section__title">DOWNLOAD OVERRIDE</h2>
       <span class="section__tag">// DEPLOYMENT</span>
     </div>
@@ -345,7 +375,7 @@
       <div class="footer__brand">
         <div class="footer__logo" data-glitch="OVERRIDE">OVERRIDE</div>
         <div class="footer__sub">© 2026 FunDreamer</div>
-        <div class="footer__sub">DEVELOPED BY FUNDREAMER</div>
+        <div class="footer__sub">DEVELOPED BY FUN DREAMER</div>
         <div class="footer__sub warn">GAME IN DEVELOPMENT</div>
       </div>
 
@@ -355,11 +385,16 @@
           <a href="#game">GAME</a>
           <a href="#story">STORY</a>
           <a href="#features">FEATURES</a>
-          <a href="#media">MEDIA</a>
+          <a href="#screenshots">SCREENSHOTS</a>
+          <a href="#gameplay">GAMEPLAY</a>
           <a href="#download">DOWNLOAD</a>
         </div>
         <div>
           <h4>CONNECT</h4>
+          <a href="#" data-social="discord">DISCORD</a>
+          <a href="#" data-social="twitter">TWITTER / X</a>
+          <a href="#" data-social="youtube">YOUTUBE</a>
+          <a href="#" data-social="steam">STEAM</a>
           <a href="#" data-social="itch">ITCH.IO</a>
         </div>
         <div>
@@ -378,9 +413,15 @@
   </footer>
 
   <!-- ================= LIGHTBOX ================= -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Screenshot viewer">
     <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
-    <img src="" alt="" id="lightboxImg" />
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">›</button>
+
+    <figure class="lightbox__stage">
+      <img src="" alt="" id="lightboxImg" />
+      <figcaption class="lightbox__cap" id="lightboxCap"></figcaption>
+    </figure>
   </div>
 
   <script src="script.js"></script>
